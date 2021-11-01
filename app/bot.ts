@@ -1,6 +1,5 @@
 import { startBot } from "discord/mod.ts";
-import { config } from "./config.ts";
-
+import { config } from "~/config.ts";
 startBot({
   token: config.token, // config.token,
   intents: ["Guilds", "GuildMessages"],
