@@ -5,5 +5,5 @@ WORKDIR /app
 COPY . .
 
 
-CMD ["run", "--allow-env", "--allow-net", "--allow-read=/app", "--allow-write=/app", "app/bot.ts"]
+CMD ["run", "--import-map=dependencies.json", "--allow-env", "--allow-net", "--allow-read=/app", "--allow-write=/app", "app/bot.ts"]
 

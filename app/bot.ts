@@ -1,4 +1,4 @@
-import { startBot } from "./lib/deps.ts";
+import { startBot } from "discord/mod.ts";
 import { config } from "./config.ts";
 
 startBot({
