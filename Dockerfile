@@ -4,5 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-CMD ["run", "--allow-net", "--allow-read=/app", "--allow-write=/app", "app/bot.ts"]
+
+CMD ["run", "--allow-env", "--allow-net", "--allow-read=/app", "--allow-write=/app", "app/bot.ts"]
 
