@@ -1,4 +1,4 @@
-import { startBot } from "discord/mod.ts";
+import { DiscordActivityTypes, editBotStatus, startBot } from "discord/mod.ts";
 import { config } from "~/config.ts";
 startBot({
   token: config.token, // config.token,
@@ -6,9 +6,16 @@ startBot({
   eventHandlers: {
     ready() {
       console.log("I am now online!");
-    },
-    messageCreate(message) {
-      
+      editBotStatus({
+        status: "dnd",
+        activities: [
+          {
+            name: "I am born to serve my community",
+            type: DiscordActivityTypes.Game,
+            createdAt: Date.now(),
+          },
+        ],
+      });
     },
   },
 });
