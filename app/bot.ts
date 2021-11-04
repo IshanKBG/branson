@@ -5,10 +5,10 @@ startBot({
   intents: ["Guilds", "GuildMessages"],
   eventHandlers: {
     ready() {
-      console.log("Successfully connected to gateway");
+      console.log("I am now online!");
     },
     messageCreate(message) {
-      // Process the message with your command handler here
+      
     },
   },
 });

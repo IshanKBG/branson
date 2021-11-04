@@ -8,4 +8,4 @@ USER deno
 ADD . .
 
 
-CMD ["run", "--import-map=import_map.json", "--allow-env", "--allow-net", "--allow-read=/app", "--allow-write=/app", "app/bot.ts"]
+CMD ["run", "--import-map=import_map.json", "--allow-env", "--allow-net", "--allow-read", "app/bot.ts"]
