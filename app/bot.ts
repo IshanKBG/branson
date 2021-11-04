@@ -10,8 +10,8 @@ startBot({
         status: "dnd",
         activities: [
           {
-            name: "I am born to serve my community",
-            type: DiscordActivityTypes.Game,
+            name: "ishanjaiswal.com",
+            type: DiscordActivityTypes.Watching,
             createdAt: Date.now(),
           },
         ],
