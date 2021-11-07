@@ -26,7 +26,7 @@ startBot({
 });
 
 app.use((ctx) => {
-  ctx.response.body = "Hello world!";
+  ctx.response.body = "Hello I am Ishan!";
 });
 
-await app.listen({ port: 8000});
+await app.listen({ port: 8000 || Deno.env.get("$PORT")});
