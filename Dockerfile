@@ -9,4 +9,4 @@ ADD . .
 
 CMD ["fmt"]
 CMD ["lint"]
-CMD ["run", "mod.ts"]
+CMD ["run", "-A", "mod.ts"]
