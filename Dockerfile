@@ -9,4 +9,4 @@ ADD . .
 
 CMD ["fmt"]
 CMD ["lint"]
-CMD ["run", "--import-map=import_map.json", "--allow-env", "--allow-net", "--allow-read", "app/bot.ts"]
+CMD ["run", "mod.ts"]

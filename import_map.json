@@ -1,8 +1,0 @@
-{
-  "imports": {
-    "discord/": "https://deno.land/x/discordeno@12.0.1/",
-    "env/": "https://deno.land/x/dotenv@v3.1.0/",
-    "oak": "https://deno.land/x/oak/mod.ts",
-    "~/": "./app/"
-  }
-}
